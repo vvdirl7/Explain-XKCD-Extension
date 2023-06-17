@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Explain XKCD",
+  "version": "1.0",
+  "description": "Adds a button to the XKCD website that redirects to the explanation page of the current comic on explainxkcd.com",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://xkcd.com/",
+        "https://*.xkcd.com/",
+        "https://*.xkcd.com/1*",
+        "https://*.xkcd.com/2*",
+        "https://*.xkcd.com/3*",
+        "https://*.xkcd.com/4*",
+        "https://*.xkcd.com/5*",
+        "https://*.xkcd.com/6*",
+        "https://*.xkcd.com/7*",
+        "https://*.xkcd.com/8*",
+        "https://*.xkcd.com/9*"
+      ],
+      "js": ["cscript.js"]
+    }
+  ]
+}
